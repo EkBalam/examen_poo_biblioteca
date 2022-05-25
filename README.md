@@ -1,18 +1,20 @@
-# CUENTAS
-Desarrollar un programa que conste de una clase padre **Cuenta** y dos subclases **PlazoFijo** y **CajaAhorro**.
-Definir los atributos *titular* y *cantidad* que seran recibidos en el metodo \_\_init\_\_, y el método para imprimir los datos en la clase **Cuenta** (\_\_str\_\_) La salida debe ser: "Titular de la cuenta: Pedro. Cantidad: 100.0"
+# Examen segundo parcial POO
 
-La clase **CajaAhorro** tendrá un método llamado **porcentajeAhorro** que recibe un monto original y devuelve el porcentaje ahorrado. ej. Si la cuenta tiene 100 de monto y el metodo recibe 500 el método debe retornar la cadena "20.0%"
+# Biblioteca
+1. Una biblioteca tiene copias de libros. Estos últimos se caracterizan por su nombre, tipo (novela, teatro, poesía, ensayo), editorial, año y autor.
+2. Los autores se caracterizan por su nombre, nacionalidad y fecha de nacimiento.
+3. Cada copia tiene un identificador, y puede estar en la biblioteca, prestada, con retraso o en reparación.
+4. Los lectores pueden tener un máximo de 3 libros en préstamo.
+5. Cada libro se presta un máximo de 30 días, por cada día de retraso, se impone una “multa” de dos días sin posibilidad de coger un nuevo libro.
 
-La clase **PlazoFijo** tendrá dos atributos propios, *plazo* e *interés*. Tendrá un método para *obtener_importe_interes* (*cantidad* * interes)
-y otro método para mostrar la información (\_\_str\_\_), datos del titular, plazo, interés y total de interés. ej. "Titular: Juan. Plazo: 1mes. Interés: 0.15. Total de interés: 45.0"
-plazo es str y interes es float
+# Instrucciones
+- Realiza un diagrama de clases y añade los métodos necesarios para realizar el préstamo, devolución de libros y registro de libros y lectores nuevos.
+- Codifica en python el diagrama de clases que diseñaste
+- Deberas subir al repositorio el diagrama de clases y el código que prueba que funciona el sistema.
+  - Deberas probar que:
+    - Puedes registrar nuevos libros y lectores
+    - Prestar y regresar libros
 
-PD> CUIDE QUE LOS NOMBRES DE LAS CLASES, METODOs, ATRIBUTOS Y ARCHIVOS SEAN TAL CUAL SE INSTRUYEN, RECUERDE CLASE POR ARCHIVO, Y EL ARCHIVO NOMBRADO COMO LA CLASE
-
-### Setup command
-`sudo -H pip3 install pytest`
-
-### Run command
-Este Ejercicio tiene mas de una prueba si quieres probar por archivo especificalo en el comando
-`pytest test_[el que quieras probar] ` 
+**NOTA: Toda la implementación puede ser en consola, no es necesario usar ni base de datos ni interfaz gráfica.**
+**Sí usas BD e interfaz grafica podrias sumar puntos. Pero lo importante es el diagrama y que los metodos funcionen**
+**Recuerda que necesitaras más que solo los métodos principales que se pide para probar**
